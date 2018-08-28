@@ -3,9 +3,9 @@ $ErrorActionPreference = "Stop"
 $url = "https://commondatastorage.googleapis.com/chromium-browser-snapshots/"
 
 if ($env:PROCESSOR_ARCHITECTURE -eq "AMD64") {
-	$url += "win_rel"
+	$url += "Win_x64"
 } else {
-	$url += "win32_rel"
+	$url += "Win"
 }
 
 $client = New-Object System.Net.WebClient
